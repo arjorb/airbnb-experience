@@ -5,8 +5,8 @@ import Navbar from './components/Navbar';
 const App = () => {
   return (
     <>
-      <div className='h-screen flex justify-center items-center'>
-        <div className='w-[31.25rem] h-[37.5rem] bg-white rounded-md'>
+      <div className='flex justify-center items-center'>
+        <div className='w-[31.25rem] h-fit bg-white rounded-md mt-10'>
           <Navbar />
           <Hero />
           <Card />
