@@ -1,3 +1,4 @@
+import Card from './components/Card';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 
@@ -8,6 +9,7 @@ const App = () => {
         <div className='w-[31.25rem] h-[37.5rem] bg-white rounded-md'>
           <Navbar />
           <Hero />
+          <Card />
         </div>
       </div>
     </>
