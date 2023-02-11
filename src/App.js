@@ -1,8 +1,14 @@
+import Navbar from './components/Navbar';
+
 const App = () => {
   return (
-    <div className='App'>
-      <h1 className='text-3xl font-bold text-[#056b85] underline'>Seting up the environment!</h1>
-    </div>
+    <>
+      <div className='h-screen flex justify-center items-center'>
+        <div className='w-[31.25rem] h-[37.5rem] bg-white rounded-md'>
+          <Navbar />
+        </div>
+      </div>
+    </>
   );
 };
 
