@@ -3,7 +3,7 @@ import React from 'react';
 const CardItem = ({ img, rating, reviewCount, country, title, price }) => {
   return (
     <>
-      <div>
+      <div className='min-w-[11rem]'>
         <div>
           <img src={`./${img}`} alt={title} className='w-44' />
         </div>
