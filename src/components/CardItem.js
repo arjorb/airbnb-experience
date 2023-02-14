@@ -1,22 +1,22 @@
 import React from 'react';
 
-const CardItem = ({ img, rating, reviewCount, country, title, price }) => {
+const CardItem = props => {
   return (
     <>
       <div className='min-w-[11rem]'>
         <div>
-          <img src={`./${img}`} alt={title} className='w-44' />
+          <img src={`./${props.data.coverImg}`} alt={props.title} className='min-w-44' />
         </div>
         <div className=' text-[12px] space-y-1'>
           <div className='flex gap-1 mt-2 items-center'>
             <img src='./star.svg' alt='star' />
-            <span>{rating}</span>
-            <span className='text-gray-400'>{reviewCount} . </span>
-            <span className='text-gray-400'>{country}</span>
+            <span>{props.data.stats.rating}</span>
+            <span className='text-gray-400'>{props.data.stats.reviewCount} . </span>
+            <span className='text-gray-400'>{props.data.location}</span>
           </div>
-          <p className='font-light'>{title}</p>
+          <p className='font-light'>{props.data.title}</p>
           <p className='font-light'>
-            <span className='font-semibold'>From ${price}</span> / person
+            <span className='font-semibold'>From ${props.data.price}</span> / person
           </p>
         </div>
       </div>
