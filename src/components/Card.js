@@ -4,7 +4,7 @@ import data from '../data';
 
 const Card = () => {
   const cardElement = data.map(data => {
-    return <CardItem data={data} />;
+    return <CardItem key={data.id} data={data} />;
   });
   return (
     <>
